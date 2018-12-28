@@ -38,12 +38,6 @@ idea {
         downloadJavadoc = false
         downloadSources = true
     }
-
-    from("${projectDir}") {
-        include "license.txt"
-        into "META-INF"
-        expand(copyright: new Date().format("yyyy"), version: project.version)
-    }
 }
 ext {
     slf4jVersion = "1.7.21"
