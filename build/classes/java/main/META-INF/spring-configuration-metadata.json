@@ -1,0 +1,220 @@
+{
+  "groups": [
+    {
+      "name": "sppring.datasource.multi",
+      "type": "com.lsq.springboot.datasource.starter.autoconfigure.MultiDataSourceProperties",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.MultiDataSourceProperties"
+    },
+    {
+      "name": "sppring.datasource.multi.druid",
+      "type": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.MultiDataSourceProperties",
+      "sourceMethod": "getDruid()"
+    }
+  ],
+  "properties": [
+    {
+      "name": "sppring.datasource.multi.druid.async-init",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.break-after-acquire-failure",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.clear-filters-enable",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.connection-error-retry-attempts",
+      "type": "java.lang.Integer",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.connection-properties",
+      "type": "java.util.Properties",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.fail-fast",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.filters",
+      "type": "java.lang.String",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.init-connection-sqls",
+      "type": "java.lang.String",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.init-global-variants",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.init-variants",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.initial-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.keep-alive",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.kill-when-socket-read-timeout",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.max-active",
+      "type": "java.lang.Integer",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.max-evictable-idle-time-millis",
+      "type": "java.lang.Long",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.max-pool-prepared-statement-per-connection-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.max-wait",
+      "type": "java.lang.Long",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.max-wait-thread-count",
+      "type": "java.lang.Integer",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.min-evictable-idle-time-millis",
+      "type": "java.lang.Long",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.min-idle",
+      "type": "java.lang.Integer",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.not-full-timeout-retry-count",
+      "type": "java.lang.Integer",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.phy-timeout-millis",
+      "type": "java.lang.Integer",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.pool-prepared-statements",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.public-key",
+      "type": "java.lang.String",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.query-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.reset-stat-enable",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.share-prepared-statements",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.stat-sql-max-size",
+      "type": "java.lang.Integer",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.test-on-borrow",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.test-on-return",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.test-while-idle",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.time-between-eviction-runs-millis",
+      "type": "java.lang.Long",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.time-between-log-stats-millis",
+      "type": "java.lang.Long",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.transaction-query-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.use-global-data-source-stat",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.use-unfair-lock",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.validation-query",
+      "type": "java.lang.String",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.druid.validation-query-timeout",
+      "type": "java.lang.Integer",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.DruidConfig"
+    },
+    {
+      "name": "sppring.datasource.multi.group",
+      "type": "java.util.Map<java.lang.String,com.lsq.springboot.datasource.starter.autoconfigure.DataSourceGroupProperties>",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.MultiDataSourceProperties"
+    },
+    {
+      "name": "sppring.datasource.multi.p6spy",
+      "type": "java.lang.Boolean",
+      "description": "是否使用p6spy输出，默认不输出",
+      "sourceType": "com.lsq.springboot.datasource.starter.autoconfigure.MultiDataSourceProperties",
+      "defaultValue": false
+    }
+  ],
+  "hints": []
+}

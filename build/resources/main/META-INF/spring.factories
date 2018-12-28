@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.lsq.springboot.datasource.starter.autoconfigure.MultiDataSourceAutoConfiguration
