@@ -18,7 +18,7 @@ buildscript {
     }
 
 }
-group 'com.lsq.springboot'
+group 'com.loushi135.springboot'
 version '1.0.0'
 
 apply plugin: "java"
