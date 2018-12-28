@@ -18,7 +18,7 @@ buildscript {
     }
 
 }
-group 'com.loushi135.springboot'
+group 'io.github.loushi135'
 version '1.0.0'
 
 apply plugin: "java"
@@ -37,6 +37,12 @@ idea {
     module {
         downloadJavadoc = false
         downloadSources = true
+    }
+
+    from("${projectDir}") {
+        include "license.txt"
+        into "META-INF"
+        expand(copyright: new Date().format("yyyy"), version: project.version)
     }
 }
 ext {
