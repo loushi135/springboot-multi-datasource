@@ -9,9 +9,9 @@ springboot multi datasource
 - 数据库分组，比如订单库组 spring.datasource.multi.order
 - 每个数据库组下分一个主库（master）和多个从库（slaves）
    ```
-      spring.datasource.multi.order.master.url=xxx
-      spring.datasource.multi.order.slaves[0].url=xxx
-      spring.datasource.multi.order.slaves[1].url=xxx
+      spring.datasource.multi.group.order.master.url=xxx
+      spring.datasource.multi.group.order.slaves[0].url=xxx
+      spring.datasource.multi.group.order.slaves[1].url=xxx
    ```
 - 通过注解@DsGroup动态指定数据库组
 - 通过注解@Slave动态指定是否使用从库     
