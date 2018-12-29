@@ -28,7 +28,34 @@ import java.lang.annotation.*;
 public @interface DsGroup {
 
     /**
-     * 组名
+     * database group name，support spel determine by params args
+     * <pre> {@code
+     * @DsGroup("testorder")
+     * public class OrderServiceImpl extends OrderService {
+     *
+     *   using slave for group testorder1
+     *   @DsGroup("testorder1")
+     *   @Slave
+     *   @Override
+     *   public OrderPo addOrderForSlave() {
+     *     return insert();
+     *   }
+     *
+     *   default using master for group testorder
+     *   @Override
+     *   public OrderPo addOrder() {
+     *     return insert();
+     *   }
+     *
+     *   depends on params args to determine group and master or slave
+     *   @DsGroup("#dsGroup")
+     *   @Slave("#slave")
+     *   @Override
+     *   public OrderPo addOrderForSpel(String dsGroup,boolean slave) {
+     *     return insert();
+     *   }
+     *
+     * }}</pre>
      *
      * @return 数据源名称
      */
