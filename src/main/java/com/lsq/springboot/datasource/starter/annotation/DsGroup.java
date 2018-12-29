@@ -21,6 +21,32 @@ import java.lang.annotation.*;
 /**
  * 可用于类和方法
  * 设置数据库组
+ *
+ * database group name，support spel determine by params args
+ * <pre>{@code
+ * DsGroup("testorder")
+ * public class OrderServiceImpl extends OrderService {
+ *
+ *   using slave for group testorder1
+ *   DsGroup("testorder1")
+ *   Slave
+ *   public OrderPo addOrderForSlave() {
+ *     return insert();
+ *   }
+ *
+ *   default using master for group testorder
+ *   public OrderPo addOrder() {
+ *     return insert();
+ *   }
+ *
+ *   depends on params args to determine group and master or slave
+ *   DsGroup("#dsGroup")
+ *   Slave("#slave")
+ *   public OrderPo addOrderForSpel(String dsGroup,boolean slave) {
+ *     return insert();
+ *   }
+ *
+ * }}</pre>
  */
 @Target({ElementType.TYPE, ElementType.METHOD})
 @Retention(RetentionPolicy.RUNTIME)
@@ -28,34 +54,6 @@ import java.lang.annotation.*;
 public @interface DsGroup {
 
     /**
-     * database group name，support spel determine by params args
-     * <pre> {@code
-     * @DsGroup("testorder")
-     * public class OrderServiceImpl extends OrderService {
-     *
-     *   using slave for group testorder1
-     *   @DsGroup("testorder1")
-     *   @Slave
-     *   @Override
-     *   public OrderPo addOrderForSlave() {
-     *     return insert();
-     *   }
-     *
-     *   default using master for group testorder
-     *   @Override
-     *   public OrderPo addOrder() {
-     *     return insert();
-     *   }
-     *
-     *   depends on params args to determine group and master or slave
-     *   @DsGroup("#dsGroup")
-     *   @Slave("#slave")
-     *   @Override
-     *   public OrderPo addOrderForSpel(String dsGroup,boolean slave) {
-     *     return insert();
-     *   }
-     *
-     * }}</pre>
      *
      * @return 数据源名称
      */
