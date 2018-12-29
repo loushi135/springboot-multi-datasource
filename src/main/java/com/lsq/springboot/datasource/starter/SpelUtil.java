@@ -27,10 +27,9 @@ import org.springframework.expression.spel.standard.SpelExpressionParser;
 import java.lang.reflect.Method;
 
 /**
- * spel
- *
- * @link https://docs.spring.io/spring-framework/docs/5.1.3.RELEASE/spring-framework-reference/core.html#expressions-evaluation
- * @link https://docs.spring.io/spring-framework/docs/5.1.3.RELEASE/spring-framework-reference/core.html#expressions-language-ref
+ * spel文档地址
+ * https://docs.spring.io/spring-framework/docs/5.1.3.RELEASE/spring-framework-reference/core.html#expressions-evaluation
+ * https://docs.spring.io/spring-framework/docs/5.1.3.RELEASE/spring-framework-reference/core.html#expressions-language-ref
  */
 public class SpelUtil {
 
