@@ -6,7 +6,7 @@ springboot multi datasource
 
 主要改动：
 - application.properties 前缀: spring.datasource.multi
-- 数据库分组，比如订单库组 spring.datasource.multi.order
+- 数据库分组，比如订单库组 spring.datasource.multi.group.order
 - 每个数据库组下分一个主库（master）和多个从库（slaves）
    ```
       spring.datasource.multi.group.order.master.url=xxx
